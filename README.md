@@ -51,6 +51,5 @@ in a serial manner.
 Shout if you need any further help. 
 
 
-Kind Regards
-
+Kind Regards,
 Heider
