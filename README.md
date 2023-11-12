@@ -48,6 +48,11 @@ More information on how the filenames are coded on a GoPro camera can be found o
 I hope this helps, it certanly made my life much easier as importing many footage into my video editing can now appear 
 in a serial manner.
 
+Tested with my MacBookPro all working fine. 
+
+Doing this on the memory stick directly also works fine, note the script only rename these files, no copying involved so
+it's quick and does not take any additional space. 
+
 Shout if you need any further help. 
 
 
