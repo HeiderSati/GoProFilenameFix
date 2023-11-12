@@ -16,8 +16,8 @@ script as a file or just simply copy-and-paste the contents below into a Shell s
     	if [ -f "$file" ]; then 
     		filenameonly=$(basename "$file")
     		dironly=$(dirname "$file")
-
-    		NewName="NEW_GH""${filenameonly:4:4}""${filenameonly:2:2}""${filenameonly:8:4}"
+    		
+            NewName="NEW_""${filenameonly:0:2}""${filenameonly:4:4}""${filenameonly:2:2}""${filenameonly:8:4}"
     		echo "Renaming File: " "$filenameonly" ", To: " "$NewName" 
     		mv "$dironly/$filenameonly" "$dironly/$NewName"
 
