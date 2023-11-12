@@ -2,9 +2,12 @@
 
 for file in "$@"; do
 	if [ -f "$file" ]; then 
-		NewName="NEW_GH""${file:4:4}""${file:2:2}""${file:8:4}"
-		echo "Renaming File: " "$file" ", To: " "$NewName"
-		mv $file $NewName
+		filenameonly=$(basename "$file")
+		dironly=$(dirname "$file")
+
+		NewName="NEW_GH""${filenameonly:4:4}""${filenameonly:2:2}""${filenameonly:8:4}"
+		echo "Renaming File: " "$filenameonly" ", To: " "$NewName" 
+		mv "$dironly/$filenameonly" "$dironly/$NewName"
+
 	fi
 done
- 
