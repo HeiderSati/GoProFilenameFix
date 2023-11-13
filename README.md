@@ -12,7 +12,7 @@ script as a file or just simply copy-and-paste the contents below into a Shell s
 
     #!/bin/sh
 
-    # Heider: Added fail safe condition to ensure we don't process the NEW_xxxx file twice...
+    # 2023-11-13 10:35am - Heider: Added fail safe condition to ensure we don't process the NEW_xxxx file twice...
     
     for file in "$@"; do
     	if [ -f "$file" ]; then 
